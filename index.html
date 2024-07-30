@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PAN Card Validator</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+        }
+        .pan {
+            text-align: center;
+            margin-top: 50px;
+            height: 150px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pan">
+        <h1>PAN Card Validator</h1>
+        <input type="text" id="panNumber" placeholder="Enter PAN card number">
+        <button onclick="validatePAN()">Validate</button>
+        <p id="result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
